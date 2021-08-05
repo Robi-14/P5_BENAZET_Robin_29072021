@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./Css/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./Css/bootstrap/dist/js/bootstrap.js">
-    <link rel="stylesheet" href="./panier.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./Css/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./Css/bootstrap/dist/js/bootstrap.js" />
+    <link rel="stylesheet" href="./panier.css" />
     <title>Orinours</title>
-</head>
-<body>
-    <header >
-    <div class="navbar">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
         <a href="./index.html">
-            <h1 class="Nom">Orinours</h1>
+          <h1 class="Nom">Orinours</h1>
         </a>
-        <a class= " panier" href="#">
-            <i class="fas fa-shopping-cart " ></i>
+        <a class="panier" href="#">
+          <i class="fas fa-shopping-cart"></i>
         </a>
-    </div>
+      </div>
     </header>
 
     <main>
-        <table class="table">
-            <thead>
-                <tr><th class="produits" >Article</th><th class="id ">ID</th><th class="priceproduct">Prix</th></tr>
-            </thead>
-            <tbody id="cart-tablebody">
-                
-            </tbody>
-        </table>
-        <div class="table-end">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="produits">Article</th>
+            <th class="id">ID</th>
+            <th class="priceproduct">Prix</th>
+          </tr>
+        </thead>
+        <tbody id="cart-tablebody"></tbody>
+      </table>
+      <div class="table-end">
         <p id="total">Total : <span class="total"></span></p>
-        </div>
-        <div class="form">
+      </div>
+      <div class="form">
         <form>
-            <div class="lastname-container formulaire">
-                <label for="last-name">Nom</label>
-                <input type="text" id="last-name" >
-                <span class="erreur"></span>
-            </div>
-            <div class="firstname-container formulaire">
-                <label for="first-name">Prénom</label>
-                <input type="text" id="first-name" >
-                <span class="erreur"></span>
-            </div>
-            <div class="adress-container formulaire">
-                <label for="adress">Adresse</label>
-                <input type="text" id="adress" >
-                <span class="erreur"></span>
-            </div>
-            <div class="city-container formulaire">
-                <label for="city">ville</label>
-                <input type="text" id="city" >
-                <span class="erreur"></span>
-            </div>
-            <div class="email-container formulaire">
-                <label for="email">Email</label>
-                <input type="text" id="email" >
-                <span class="erreur"></span>
-            </div>
-
-
-
+          <h3 class="info formulaire">Vos Informations</h3>
+          <div class="lastname-container formulaire">
+            <label for="last-name">Nom</label>
+            <input type="text" id="last-name" />
+            <span class="erreur"></span>
+          </div>
+          <div class="firstname-container formulaire">
+            <label for="first-name">Prénom</label>
+            <input type="text" id="first-name" />
+            <span class="erreur"></span>
+          </div>
+          <div class="adress-container formulaire">
+            <label for="adress">Adresse</label>
+            <input type="text" id="adress" />
+            <span class="erreur"></span>
+          </div>
+          <div class="city-container formulaire">
+            <label for="city">Ville</label>
+            <input type="text" id="city" />
+            <span class="erreur"></span>
+          </div>
+          <div class="email-container formulaire">
+            <label for="email">Email</label>
+            <input type="text" id="email" required />
+            <span class="erreur"></span>
+          </div>
+          <input type="submit" value="Commander" id="commander" />
         </form>
-    </div>
+      </div>
     </main>
     <footer>
-        <div class="footer">
-            <a href="mailto:ourinours@outlook.fr">Contact</a>
-            <a href="#">Mentions légales</a>
-            <div class= "infos">     
-                <a href="www.facebook.fr"><i class="fab fa-facebook"></i></a>
-                <a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-                <a href="www.instagram.com"><i class="fab fa-instagram-square"></i></a>
-
-            </div>
+      <div class="footer">
+        <a href="mailto:ourinours@outlook.fr">Contact</a>
+        <a href="#">Mentions légales</a>
+        <div class="infos">
+          <a href="www.facebook.fr"><i class="fab fa-facebook"></i></a>
+          <a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+          <a href="www.instagram.com"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
         </div>
-
-
-
+      </div>
     </footer>
-    
 
-<script src="./panier.js"></script>
- <script src="https://kit.fontawesome.com/bff8148aa2.js" crossorigin="anonymous"></script>
-</body>
+    <script src="./panier.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bff8148aa2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
